@@ -1,0 +1,143 @@
+/* estilos del index */
+/* estilos del body */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+    background-color: #FFF9F9;
+}
+
+/* estilos del header*/
+
+header{
+    padding: 0.6rem;
+    background-color: #CDF2CA;
+}
+header h1{
+    color: #187498;
+    font-size: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 2rem;
+}
+
+div .espacio-menu a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #184D47;
+}
+
+/* estilos del main */
+
+main h2{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+main p{
+    text-align: center;
+    color: #184D47;
+}
+
+.ejemplos{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    color:#184D47;
+    background-color: #CDF2CA;
+}
+
+.ejemplos div h3:hover{
+    transform: scale(0.8);
+}
+
+h3{
+    text-align: center;
+}
+
+/* estilos del footer */
+
+footer{
+    background-color: #CDF2CA;
+}
+
+footer h4{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color:#184D47;
+}
+
+
+footer .imagenes a{
+    padding: 0.5rem;
+    display: inline;
+}
+
+.pie{
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: black;
+    font-size: medium;
+}
+
+/* estilos del html cursos */
+.boton-color{
+    background-color: #CDF2CA;
+} 
+
+.row{
+    padding: 2rem;
+    
+}
+/*estilos del html nosotros*/
+
+.sobre-nosotros{
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+/* media queries */
+
+    @media screen and (min-width:768px){
+      header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+     .ejemplos{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+     
+     .imagenes{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 30%;
+    }
+
+    /*estilos del nav*/
+
+     div .espacio-menu a{
+        text-decoration: none;
+        font-size: 19px;
+        padding: 20px;
+        color:#184D47;
+        display: inline-block
+    }
+}
+
+
+
+    
