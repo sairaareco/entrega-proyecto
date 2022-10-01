@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS BT -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <!-- link de mi CSS -->
+      <link rel="stylesheet" href="../css/main.css">
+     <!-- Tipografia -->
+      <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap" rel="stylesheet">
     <title> Idiomas </title>
 </head>
 <body>
     <header>
-        <h1> <a href="../index.html"> Go! Learn </a> </h1>
-        <nav>
-            <ul class="menu">
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="../cursos/cursos.html"> Cursos </a> </li>
-                <li> <a href="../idiomas/idiomas.html"> Idiomas </a> </li>
-                <li> <a href="../contacto/contacto.html"> Contacto </a> </li>
-                <li> <a href="../nosotros/nosotros.html"> Sobre nosotros </a> </li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <div class="row">
+            <h1 class="col-4 animate__animated animate__swing"> Go! Learn </h1>
+       <nav class="navbar navbar-expand-lg col-8">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+               
+            <div class="espacio-menu">
+              <a aria-current="page"href="../index.html"> Inicio </a>
+              <a href="../cursos/cursos.html"> Cursos </a>
+              <a href="../idiomas/idiomas.html"> Idiomas </a>
+              <a href="../contacto/contacto.html"> Contacto </a>
+              <a href="../nosotros/nosotros.html"> Sobre nosotros </a>
+            </div>
+            </div>
+            </div>
+            </div>
+       </nav>
+
+
+    
     </header>
 
     <main>
         <h2> En Go! Learn podrás aprender todos los niveles de los siguientes idiomas:</h2>
+
 
         <h3> INGLÉS </h3>
         
@@ -37,13 +57,17 @@
 
     <footer>
         <h4> Encontranos en: </h4>
-    <div class="imagenes">
-       <img src="img/OIP.jfif" alt="logo de youtube" width="10%" > 
-       <img src="img/th (1).jfif" alt="logo de instagram" width="8%"> 
-       <img src="img/th.jfif" alt="logo de facebook" width="8%"> 
-    </div>
-       <h4 class="pie"> Todos los derechos reservados </h4>
+        <div class="imagenes">
+         <img src="../img/OIP.jfif" alt="logo de youtube" width="10%"> 
+         <img src="../img/th (1).jfif" alt="logo de instagram" width="8%"> 
+         <img src="../img/th.jfif" alt="logo de facebook" width="8%"> 
+        </div>
+     
+         <h4 class="pie"> Todos los derechos reservados </h4>
+
+
     </footer>
-    
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
 </body>
 </html>

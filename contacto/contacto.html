@@ -37,28 +37,30 @@
     </header>
 
     <main>
-       <form action="">
-        <fieldset>
-            <legend> Formulario de contacto </legend>
-            <div>
-                <label for="nombre"> Ingresa tu nombre </label>
-                <input type="text" id="nombre">
-                <label for="apellido"> Ingresa tu apellido </label>
-                <input type="text" id="apellido">
-                </div>
-                <div>
-                <label for="email"> Ingresa tu email </label>
-                <input type="correo" id="email">
-            </div>
-            <div>
-                <label for="consulta"> Ingresa tu consulta </label>
-                <input type="text" id="consulta">
-            </div>
-            <div>
-                <input type="submit">
-            </div>
+        <h2> Envianos tu consulta </h2>
+        <form class="container-fluid" action="">
+        <fieldset class="row d-flex justify-content-center "> 
+        <div class="col-12    ">
+        <label for="nombre" class="form-label color"> Ingresa tu nombre </label>
+            <input type="text" class="form-control" id="nombre">
+
+        <div class="col-12  " >
+            <label for="correo" class="form-label color"> Ingresa tu email </label>
+            <input type="email" class="form-control" id="correo">
+        </div>
+    
+        <div class="col-12  " >
+            <label for="consulta" class="form-label color"> Ingresa tu consulta </label>
+            <textarea class="form-control" id="consulta"></textarea>
+        </div>
+        <div>
+            
+
+        </div>
+   
         </fieldset>
-       </form>
+        </form>
+
     </main>
     
     <footer>

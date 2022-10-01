@@ -38,6 +38,7 @@ div .espacio-menu a{
 main h2{
     margin-top: 2rem;
     text-align: center;
+    color: #184D47;
 }
 
 main p{
@@ -91,15 +92,31 @@ footer .imagenes a{
     background-color: #CDF2CA;
 } 
 
-.row{
-    padding: 2rem;
-    
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.card{
+    margin: 1rem;
+}
+
+/* estilos de html idiomas */
+
 /*estilos del html nosotros*/
 
 .sobre-nosotros{
     margin-top: 1rem;
     font-size: larger;
+}
+
+/* estilos del html contacto */
+main h2{
+    color: #184D47;
+    font-size: 25px;
+}
+.color{
+    color: #184D47;
 }
 
 /* media queries */
@@ -132,7 +149,13 @@ footer .imagenes a{
         padding: 20px;
         color:#184D47;
         display: inline-block
+        
     }
+
+    
+
+   
+    
 }
 
 
