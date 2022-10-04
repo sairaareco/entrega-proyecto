@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="row">
              <h1 class="col-4"> Go! Learn </h1>
-        <nav class="navbar navbar-expand-lg col-8">
+        <nav class="navbar navbar-expand-lg col-8 d-flex justify-content-end ">
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
              </button>
@@ -39,23 +39,22 @@
     <main>
         <h2> Envianos tu consulta </h2>
         <form class="container-fluid" action="">
-        <fieldset class="row d-flex justify-content-center "> 
-        <div class="col-12    ">
+        <fieldset class="row d-flex justify-content-center"> 
+        <div class="col-12">
         <label for="nombre" class="form-label color"> Ingresa tu nombre </label>
             <input type="text" class="form-control" id="nombre">
 
-        <div class="col-12  " >
+        <div class="col-12 ">
             <label for="correo" class="form-label color"> Ingresa tu email </label>
             <input type="email" class="form-control" id="correo">
         </div>
     
-        <div class="col-12  " >
+        <div class="col-12 ">
             <label for="consulta" class="form-label color"> Ingresa tu consulta </label>
             <textarea class="form-control" id="consulta"></textarea>
         </div>
-        <div>
-            
-
+        <div class="col-12 enviar">
+          <input type="submit">
         </div>
    
         </fieldset>
@@ -65,13 +64,18 @@
     
     <footer>
         <h4> Encontranos en: </h4>
-      <div class="imagenes">
-       <img src="../img/OIP.jfif" alt="logo de youtube" width="10%"> 
-       <img src="../img/th (1).jfif" alt="logo de instagram" width="8%"> 
-       <img src="../img/th.jfif" alt="logo de facebook" width="8%"> 
-      </div>
-       <h4 class="pie"> Todos los derechos reservados </h4>
-    </footer>
+       <div class="imagenes">
+        <a href="https://www.youtube.com" target="_blank"> <img src="../img/youtube.svg" alt="logo de youtube">    </a>
+        <a href="https://www.facebook.com" target="_blank">  <img src="../img/facebook.svg" alt="logo de facebook">  </a>
+      <a href="https://www.instagram.com" target="_blank"> <img src="../img/instagram (1).svg" alt="logo de instagram">
+      </a>
+      
+      
+       </div>
+    
+        <h4 class="pie"> © 2022 - Saira. Todos los derechos reservados. </h4>
+      </footer>
+   
     
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
