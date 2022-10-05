@@ -1,175 +1,68 @@
 /* estilos del index */
 /* estilos del body */
-
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Asap', sans-serif;
-    background-color: #FFF9F9;
-}
-
-/* estilos del header*/
-
-header{
-   background-color: #CDF2CA;
-}
-header .container-fluid{
-           
-}
-
-.menu{
-    display: flex;
-    justify-content: end;
-    list-style: none;
-    gap: 2rem;
-}
-
-div .espacio-menu a{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #184D47;
-}
-
-/* estilos del main */
-
-main h2{
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Asap', sans-serif;
+  background-color: #FFF9F9;
+  /* estilos del html cursos */
+  /* estilos del html nosotros */ }
+  body header {
+    background-color: #CDF2CA; }
+    body header .menu {
+      display: flex;
+      justify-content: end;
+      list-style: none;
+      gap: 2rem; }
+      body header .menu div .espacio-menu a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: #184D47; }
+  body main h2 {
     margin-top: 2rem;
     text-align: center;
-    color: #184D47;
-}
-
-main p{
+    color: #184D47; }
+  body main p {
     text-align: center;
-    color: #184D47;
-}
-
-.ejemplos{
+    color: #184D47; }
+  body .ejemplos {
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 0.7rem;
     display: flex;
     flex-direction: column;
-    color:#184D47;
-    background-color: #CDF2CA;
-}
-
-
-h3{
-    text-align: center;
-}
-
-/* estilos del footer */
-
-footer{
-    background-color: #CDF2CA;
-}
-
-footer h4{
-    margin-top: 2rem;
-    padding-top: 1rem;
-    color:#184D47;
-    font-size: 17px;
-}
-
-
-footer .imagenes a{
-    padding: 0.5rem;
-    display: inline;
-}
-
-.pie{
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    color: black;
-    font-size: medium;
-}
-
-/* estilos del html cursos */
-.boton-color{
-    background-color: #CDF2CA;
-} 
-
-main .container{
+    color: #184D47;
+    background-color: #CDF2CA; }
+    body .ejemplos h3 {
+      text-align: center; }
+  body footer {
+    background-color: #CDF2CA; }
+    body footer h4 {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      color: #184D47;
+      font-size: 17px; }
+    body footer .imagenes a {
+      padding: 0.5rem;
+      display: inline; }
+    body footer .pie {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      color: black;
+      font-size: medium; }
+  body main .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.card{
-    margin: 1rem;
-}
-
-/* estilos de html idiomas */
-.subtitulo{
-    font-size: 20px;
-}
-
-/*estilos del html nosotros*/
-main .sobre-nosotros h2{
+    align-items: center; }
+    body main .container .card {
+      margin: 1rem; }
+    body main .container .boton-color {
+      background-color: #CDF2CA; }
+  body .sobre-nosotros {
     margin-top: 0.7rem;
-}
-
-.sobre-nosotros{
-    margin-top: 0.7rem;
-    font-size: 17px;
-}
-
-/* estilos del html contacto */
-main h2{
-    color: #184D47;
-    font-size: 20px;
-}
-.color{
-    color: #184D47;
-}
-div .enviar{ 
-    margin: 0.5rem;
-    text-align: center;
-}
-
-/* media queries */
-
-    @media screen and (min-width:768px){
-      header{
-        display: block;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-     .ejemplos{
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-    }
-     
-     .imagenes{
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        width: 30%;
-    }
-
-    /*estilos del nav*/
-
-     div .espacio-menu a{
-        text-decoration: none;
-        font-size: 19px;
-        padding: 20px;
-        color:#184D47;
-        display: inline-block
-        
-    }
-
-    
-
-   
-    
-}
-
-
-
-
-
-    
+    font-size: 17px; }
+    body .sobre-nosotros main .sobre-nosotros h2 {
+      margin-top: 0.7rem; }
