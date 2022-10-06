@@ -11,6 +11,10 @@
     font-size: 19px;
     padding: 10px;
     color: #184D47; }
+  main .carousel-inner .carousel-item img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 80vh; }
   main div .ejemplos {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr; }

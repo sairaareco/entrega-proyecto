@@ -19,10 +19,17 @@
             
         }
     }
-    main div .ejemplos{
+    main { 
+        .carousel-inner .carousel-item img{
+            object-fit: scale-down;
+            width: 100%;
+            height: 80vh;
+        }
+    div .ejemplos{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
     }
+}
     footer .imagenes{
         display: flex;
         flex-direction: row;
