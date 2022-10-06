@@ -19,7 +19,7 @@
             
         }
     }
-    main .ejemplos{
+    main div .ejemplos{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
     }
@@ -29,4 +29,6 @@
         gap: 1rem;
         width: 30%;
     }
+    /*html idiomas */
+   
 }

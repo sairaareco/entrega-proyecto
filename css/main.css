@@ -11,14 +11,15 @@
     font-size: 19px;
     padding: 10px;
     color: #184D47; }
-  main .ejemplos {
+  main div .ejemplos {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr; }
   footer .imagenes {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    width: 30%; } }
+    width: 30%; }
+  /*html idiomas */ }
 
 /* estilos del index */
 /* estilos del body */
@@ -79,6 +80,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    body main .container .card {
+      box-shadow: 3px 3px 4px #CDF2CA; }
+    body main .container .btn {
+      background-color: #CDF2CA; }
   body .sobre-nosotros {
     margin-top: 0.7rem;
     font-size: 17px; }
