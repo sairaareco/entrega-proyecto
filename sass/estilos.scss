@@ -1,4 +1,5 @@
 @import "sass/variables";
+@import "sass/mq";
 
 /* estilos del index */
 /* estilos del body */
@@ -11,19 +12,20 @@ body{
     background-color: #FFF9F9;
     header{
         background-color: #CDF2CA;
-        .menu{
+    
+        .navbar{
             display: flex;
+            flex-direction: row;
             justify-content: end;
-            list-style: none;
-            gap: $medida-principal;
-            div .espacio-menu a{
-                display: flex;
-                flex-direction: column;
-                text-decoration: none;
-                color: $color-principal;
-            }
+        }
+        div .espacio-menu a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: $color-principal;
         }
     }
+   
     main h2{
         margin-top: $medida-principal;
         text-align: center;
@@ -70,20 +72,27 @@ body{
              display: flex;
              flex-direction: column;
              align-items: center;
-            .card{
-                 margin: 1rem;
-           }
-            .boton-color{
-        background-color: #CDF2CA;
-    }
-      }
-      /* estilos del html nosotros */
+            }
+           
+     /* estilos del html nosotros */
      .sobre-nosotros{
             margin-top: 0.7rem;
             font-size: 17px;
       main .sobre-nosotros h2{
     margin-top: 0.7rem;
        }
-}
+    }
+     /* estilos del html contacto */
+     main h2{
+        color: $color-principal;
+        font-size: 20px;
+        .color{
+            color: $color-principal;
+        }
+        div .enviar{
+            margin: 0.5rem;
+            text-align: center;
+        }
+     }
 
 }

@@ -1,0 +1,32 @@
+/* media queries */
+@media screen and (min-width:768px){
+    header{
+        
+        .espacio-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2rem;
+        }
+      
+       div .espacio-menu a{
+       
+            text-decoration: none;
+            font-size: 19px;
+            padding: 10px;
+            color: $color-principal;
+            
+        }
+    }
+    main .ejemplos{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    footer .imagenes{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 30%;
+    }
+}

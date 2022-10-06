@@ -1,3 +1,25 @@
+/* media queries */
+@media screen and (min-width: 768px) {
+  header .espacio-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem; }
+  header div .espacio-menu a {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px;
+    color: #184D47; }
+  main .ejemplos {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; }
+  footer .imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 30%; } }
+
 /* estilos del index */
 /* estilos del body */
 body {
@@ -7,19 +29,19 @@ body {
   font-family: 'Asap', sans-serif;
   background-color: #FFF9F9;
   /* estilos del html cursos */
-  /* estilos del html nosotros */ }
+  /* estilos del html nosotros */
+  /* estilos del html contacto */ }
   body header {
     background-color: #CDF2CA; }
-    body header .menu {
+    body header .navbar {
       display: flex;
-      justify-content: end;
-      list-style: none;
-      gap: 2rem; }
-      body header .menu div .espacio-menu a {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        color: #184D47; }
+      flex-direction: row;
+      justify-content: end; }
+    body header div .espacio-menu a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #184D47; }
   body main h2 {
     margin-top: 2rem;
     text-align: center;
@@ -57,12 +79,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    body main .container .card {
-      margin: 1rem; }
-    body main .container .boton-color {
-      background-color: #CDF2CA; }
   body .sobre-nosotros {
     margin-top: 0.7rem;
     font-size: 17px; }
     body .sobre-nosotros main .sobre-nosotros h2 {
       margin-top: 0.7rem; }
+  body main h2 {
+    color: #184D47;
+    font-size: 20px; }
+    body main h2 .color {
+      color: #184D47; }
+    body main h2 div .enviar {
+      margin: 0.5rem;
+      text-align: center; }
