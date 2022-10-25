@@ -12,7 +12,7 @@ body{
     background-color: #FFF9F9;
     header{
         background-color: #CDF2CA;
-    
+        
         .navbar{
             display: flex;
             flex-direction: row;
@@ -89,16 +89,21 @@ body{
        }
     }
      /* estilos del html contacto */
-     main h2{
+     main{
+        h2{
         color: $color-principal;
         font-size: 20px;
+        }
         .color{
             color: $color-principal;
         }
-        div .enviar{
+        .enviar{
             margin: 0.5rem;
             text-align: center;
         }
      }
-
+    
+    
+    
 }
+

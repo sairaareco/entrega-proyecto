@@ -2,6 +2,7 @@
 @media screen and (min-width:768px){
     header{
         
+        
         .espacio-menu{
             display: flex;
             flex-direction: row;
@@ -20,22 +21,28 @@
         }
     }
     main { 
+        
+        
         .carousel-inner .carousel-item img{
             object-fit: scale-down;
             width: 100%;
             height: 80vh;
         }
-    div .ejemplos{
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-    }
-}
+       
+    }   
+
     footer .imagenes{
         display: flex;
         flex-direction: row;
         gap: 1rem;
         width: 30%;
     }
-    /*html idiomas */
+    /* estilos del html contacto */
+    main{
+        div .enviar{
+            margin: 0.5rem;
+            text-align: center;
+        }
+    }
    
 }
