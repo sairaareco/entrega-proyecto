@@ -63,8 +63,7 @@ body{
                 font-size: 17px;
             }
             .imagenes a{
-                margin-left: 1rem;
-                padding: 0.7rem;
+                padding: 0.5rem;
                 display: inline;
             }
             .pie{
@@ -192,12 +191,16 @@ body{
         }
     }   
     footer{ 
-        .imagenes{
-            display: flex;
-            flex-direction: row;
-            gap: $medida-principal / 2;
+        .imagenes a{
+            display: inline;
+            gap: $medida-principal;
             width: 30%;
         }
+        .pie{
+            text-align: center;
+        }
+        
+        
     }
    /* estilos del html contacto */
     main{

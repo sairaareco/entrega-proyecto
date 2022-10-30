@@ -52,8 +52,7 @@ body {
       color: #184D47;
       font-size: 17px; }
     body footer .imagenes a {
-      margin-left: 1rem;
-      padding: 0.7rem;
+      padding: 0.5rem;
       display: inline; }
     body footer .pie {
       margin-bottom: 1rem;
@@ -134,11 +133,12 @@ body {
         margin-top: -0.5rem; }
       body main section h3:hover {
         transform: scale(1.1); }
-    body footer .imagenes {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
+    body footer .imagenes a {
+      display: inline;
+      gap: 2rem;
       width: 30%; }
+    body footer .pie {
+      text-align: center; }
     body main .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
