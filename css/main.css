@@ -1,27 +1,3 @@
-/* media queries */
-@media screen and (min-width: 768px) {
-  header .espacio-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem; }
-  header div .espacio-menu a {
-    text-decoration: none;
-    font-size: 19px;
-    padding: 10px;
-    color: #184D47; }
-  
-  main div .ejemplos {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr; }
-  footer .imagenes {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 30%; }
-  /*html idiomas */ }
-
 /* estilos del index */
 /* estilos del body */
 body {
@@ -29,13 +5,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Asap', sans-serif;
-  background-color: #FFF9F9;  
+  background-color: #FFF9F9;
   /* estilos del html cursos */
   /* estilos del html nosotros */
-  /* estilos del html contacto */ }
+  /* estilos del html contacto */
+  /* estilos del html idiomas */ }
   body header {
     background-color: #CDF2CA; }
+    body header div img {
+      margin-left: 2rem; }
     body header .navbar {
+      padding-right: 1.5rem;
       display: flex;
       flex-direction: row;
       justify-content: end; }
@@ -51,16 +31,19 @@ body {
   body main p {
     text-align: center;
     color: #184D47; }
-  body .ejemplos {
+  body main .inicio {
     margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    color: #184D47;
     background-color: #CDF2CA; }
-    body .ejemplos h3 {
-      text-align: center; }
+    body main .inicio div {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body main .inicio div h3 {
+        color: #184D47; }
+      body main .inicio div img {
+        width: 30%; }
   body footer {
     background-color: #CDF2CA; }
     body footer h4 {
@@ -69,7 +52,8 @@ body {
       color: #184D47;
       font-size: 17px; }
     body footer .imagenes a {
-      padding: 0.5rem;
+      margin-left: 1rem;
+      padding: 0.7rem;
       display: inline; }
     body footer .pie {
       margin-bottom: 1rem;
@@ -85,21 +69,105 @@ body {
       box-shadow: 3px 3px 4px #CDF2CA; }
     body main .container .btn {
       background-color: #CDF2CA; }
-  body .sobre-nosotros {
+  body main .sobre-nosotros {
     margin-top: 0.7rem;
     font-size: 17px; }
-    body .sobre-nosotros main .sobre-nosotros h2 {
+    body main .sobre-nosotros h2 {
       margin-top: 0.7rem; }
+    body main .sobre-nosotros .img {
+      display: none; }
   body main h2 {
     color: #184D47;
     font-size: 20px; }
-    body main h2 .color {
+  body main .color {
+    color: #184D47; }
+  body main .enviar {
+    margin: 0.5rem;
+    text-align: center; }
+  body main .bandera-dos {
+    margin-bottom: -1rem; }
+  body main .card-text {
+    margin-top: 1rem; }
+
+/* media queries */
+@media screen and (min-width: 650px) {
+  body main .inicio {
+    margin-top: 2rem; }
+  body main section {
+    display: flex;
+    flex-direction: row; }
+    body main section .gorro {
+      margin-top: -0.1rem; }
+    body main section .chat {
+      margin-top: 0.2rem; }
+    body main section .diploma {
+      margin-top: -0.2rem; } }
+
+@media screen and (min-width: 950px) {
+  body {
+    /* estilos del html contacto */
+    /* estilos del html nosotros */
+    /* estilos de html idiomas */ }
+    body header div img {
+      margin-left: 4rem; }
+    body header .espacio-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem; }
+    body header div .espacio-menu a {
+      text-decoration: none;
+      font-size: 19px;
+      padding: 10px;
       color: #184D47; }
-    body main h2 div .enviar {
-      margin: 0.5rem;
-      text-align: center; }
-
-
-
-
-  
+    body main .inicio {
+      margin-top: 2rem; }
+    body main section {
+      display: flex;
+      flex-direction: row; }
+      body main section .clases {
+        margin-top: -0.3rem; }
+      body main section .chat {
+        margin-top: 0.1rem; }
+      body main section .diploma {
+        margin-top: -0.5rem; }
+      body main section h3:hover {
+        transform: scale(1.1); }
+    body footer .imagenes {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      width: 30%; }
+    body main .container-fluid {
+      padding-right: 60px;
+      padding-left: 60px; }
+      body main .container-fluid div .enviar {
+        margin: 0.5rem;
+        text-align: center; }
+    body main .sobre-nosotros {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 2fr 2fr 2fr;
+      grid-template-areas: "img texto" "img texto" "img texto"; }
+      body main .sobre-nosotros .texto {
+        grid-area: texto;
+        margin-right: 2rem;
+        margin-top: -1rem;
+        padding-top: 2rem; }
+      body main .sobre-nosotros .img {
+        grid-area: img;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        filter: drop-shadow(3px 3px 6px #4b8eb1);
+        display: inline-block; }
+    body main .bandera-dos {
+      margin-bottom: -1rem; }
+    body main .cards {
+      row-gap: 3rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+      body main .cards .card-text {
+        margin-top: 1rem; }
+        body main .cards .card-text:hover {
+          transform: scale(1.1); } }

@@ -1,5 +1,5 @@
 @import "sass/variables";
-@import "sass/mq";
+@import "sass/mixin";
 
 /* estilos del index */
 /* estilos del body */
@@ -12,66 +12,73 @@ body{
     background-color: #FFF9F9;
     header{
         background-color: #CDF2CA;
-        
+        div img{
+            margin-left: $medida-principal;
+        }
         .navbar{
+            padding-right: 1.5rem;
             display: flex;
             flex-direction: row;
             justify-content: end;
         }
         div .espacio-menu a{
-            display: flex;
-            flex-direction: column;
+            @include flexbox;
             text-decoration: none;
             color: $color-principal;
         }
     }
-   
-    main h2{
-        margin-top: $medida-principal;
-        text-align: center;
-        color: $color-principal;
-    }
-    main p{
-        text-align: center;
-        color: $color-principal;
-    }
-    .ejemplos{
-        margin-top: $medida-principal;
-        padding-top: 1rem;
-        padding-bottom: 0.7rem;
-        display: flex;
-        flex-direction: column;
-        color: $color-principal;
-        background-color: #CDF2CA;
-        h3{
+    main{ 
+        h2{
+            margin-top: $medida-principal;
             text-align: center;
+            color: $color-principal;
+        }    
+        p{
+            text-align: center;
+            color: $color-principal;
+        }
+        .inicio{
+            margin-top: $medida-principal;
+            background-color: #CDF2CA;
+            div{
+                margin: 0.5rem;
+                padding: 0.5rem;
+                @include flexbox;
+                align-items: center;
+                h3{
+                    color: $color-principal;
+                }
+                img{
+                    width: 30%;
+                }
+            }
         }
     }
     footer{
         background-color: #CDF2CA;
-        h4{
-            margin-top: $medida-principal;
-            padding-top: 1rem;
-            color: $color-principal;
-            font-size: 17px;
-        }
-        .imagenes a{
-            padding: 0.5rem;
-            display: inline;
-        }
-        .pie{
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            text-align: center;
-            color: black;
-            font-size: medium;
-        }
+            h4{
+                margin-top: $medida-principal;
+                padding-top: $medida-principal / 2;
+                color: $color-principal;
+                font-size: 17px;
+            }
+            .imagenes a{
+                margin-left: 1rem;
+                padding: 0.7rem;
+                display: inline;
+            }
+            .pie{
+                margin-bottom: $medida-principal / 2;
+                padding-bottom: $medida-principal / 2;
+                text-align: center;
+                color: black;
+                font-size: medium;
+            }
     }
     /* estilos del html cursos */
     main .container{
-             display: flex;
-             flex-direction: column;
-             align-items: center;
+        @include flexbox;
+        align-items: center;
             .card{
                 box-shadow: 3px 3px 4px #CDF2CA;
             }
@@ -79,20 +86,24 @@ body{
                 background-color: #CDF2CA;
             }
     }
-           
-     /* estilos del html nosotros */
-     .sobre-nosotros{
+    /* estilos del html nosotros */
+    main{
+        .sobre-nosotros{
             margin-top: 0.7rem;
             font-size: 17px;
-      main .sobre-nosotros h2{
-    margin-top: 0.7rem;
-       }
-    }
-     /* estilos del html contacto */
-     main{
+            h2{
+                margin-top: 0.7rem;
+            }
+            .img{
+                display: none;
+            }
+        }
+    }  
+    /* estilos del html contacto */
+    main{
         h2{
-        color: $color-principal;
-        font-size: 20px;
+            color: $color-principal;
+            font-size: 20px;
         }
         .color{
             color: $color-principal;
@@ -101,9 +112,147 @@ body{
             margin: 0.5rem;
             text-align: center;
         }
-     }
-    
-    
-    
+    }
+    /* estilos del html idiomas */
+    main{
+        .bandera-dos{
+            margin-bottom: -1rem;
+        }
+        .card-text{
+            margin-top: $medida-principal / 2;
+        }
+    }
 }
+
+/* media queries */
+@media screen and (min-width: 650px){
+body{
+    main{
+        .inicio{
+            margin-top: $medida-principal;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            .gorro{
+                margin-top: -0.1rem;
+            }
+            .chat{
+                margin-top: 0.2rem;
+            }
+            .diploma{
+                margin-top: -0.2rem;
+            }
+        }
+    }
+}
+}
+
+@media screen and (min-width: 950px){
+body{
+    header{
+        div img{
+            margin-left: 4rem;
+        }
+        .espacio-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: $medida-principal;
+        }
+        div .espacio-menu a{
+            text-decoration: none;
+            font-size: 19px;
+            padding: 10px;
+            color: $color-principal;
+        }
+    }
+    main{ 
+        .inicio{
+            margin-top: $medida-principal;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            .clases{
+                margin-top: -0.3rem;
+            }
+            .chat{
+                margin-top: 0.1rem;
+            }
+            .diploma{
+                margin-top: -0.5rem;
+            }
+            h3{
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }   
+    footer{ 
+        .imagenes{
+            display: flex;
+            flex-direction: row;
+            gap: $medida-principal / 2;
+            width: 30%;
+        }
+    }
+   /* estilos del html contacto */
+    main{
+        .container-fluid{
+            padding-right: 60px;
+            padding-left: 60px;
+            div .enviar{
+                 margin: 0.5rem;
+                text-align: center;
+            }
+        }
+    }
+   /* estilos del html nosotros */
+    main{
+        .sobre-nosotros{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 2fr 2fr 2fr;
+            grid-template-areas: 
+            "img texto"
+            "img texto"
+            "img texto";
+            .texto{
+                grid-area: texto;
+                margin-right: $medida-principal;
+                margin-top: -1rem;
+                padding-top: $medida-principal;
+            }
+            .img{
+                grid-area: img;
+                margin-top: $medida-principal;
+                margin-left: 1.5rem;
+                filter: drop-shadow(3px 3px 6px rgb(75, 142, 177));
+                display: inline-block;
+            }
+        }
+    }
+   /* estilos de html idiomas */
+    main{
+        .bandera-dos{
+            margin-bottom: -1rem;
+        }
+        .cards{
+            row-gap: 3rem;
+            margin-left: $medida-principal;
+            margin-right: $medida-principal;
+            .card-text{
+                margin-top: $medida-principal / 2;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+}
+
 
