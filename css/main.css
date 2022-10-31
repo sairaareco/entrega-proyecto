@@ -46,12 +46,14 @@ body {
         width: 30%; }
   body footer {
     background-color: #CDF2CA; }
-    body footer h4 {
+    body footer h3 {
+      margin-left: 1rem;
       margin-top: 2rem;
       padding-top: 1rem;
       color: #184D47;
-      font-size: 17px; }
+      font-size: 20px; }
     body footer .imagenes a {
+      margin-left: 2rem;
       padding: 0.5rem;
       display: inline; }
     body footer .pie {

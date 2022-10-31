@@ -56,13 +56,15 @@ body{
     }
     footer{
         background-color: #CDF2CA;
-            h4{
+            h3{
+                margin-left: $medida-principal / 2;
                 margin-top: $medida-principal;
                 padding-top: $medida-principal / 2;
                 color: $color-principal;
-                font-size: 17px;
+                font-size: 20px;
             }
             .imagenes a{
+                margin-left: $medida-principal;
                 padding: 0.5rem;
                 display: inline;
             }
