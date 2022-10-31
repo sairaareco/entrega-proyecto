@@ -47,16 +47,15 @@ body {
   body footer {
     background-color: #CDF2CA; }
     body footer h3 {
-      margin-left: 1rem;
       margin-top: 2rem;
       padding-top: 1rem;
       color: #184D47;
-      font-size: 20px; }
+      font-size: 17px; }
     body footer .imagenes a {
-      margin-left: 2rem;
       padding: 0.5rem;
       display: inline; }
     body footer .pie {
+      margin-top: 1rem;
       margin-bottom: 1rem;
       padding-bottom: 1rem;
       text-align: center;
